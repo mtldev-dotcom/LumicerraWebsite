@@ -42,12 +42,12 @@ const Header = () => {
 
   return (
     <header className={`fixed w-full bg-[#bab7ad] z-50 transition-all duration-300 ${isScrolled ? "shadow-md" : ""}`}>
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="h-12"
+            className="h-16"
           >
             <img 
               src="/assets/C6D7B471-178C-4A3D-B15A-EBF22B1524FB.png" 

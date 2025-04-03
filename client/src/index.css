@@ -10,5 +10,6 @@
   body {
     @apply font-sans antialiased text-foreground;
     background-color: #bab7ad;
+    padding-top: 56px; /* Match the height of the header */
   }
 }
