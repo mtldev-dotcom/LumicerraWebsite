@@ -41,7 +41,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed w-full bg-white z-50 transition-all duration-300 ${isScrolled ? "shadow-md" : ""}`}>
+    <header className={`fixed w-full bg-[#bab7ad] z-50 transition-all duration-300 ${isScrolled ? "shadow-md" : ""}`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <motion.div 
@@ -65,8 +65,8 @@ const Header = () => {
               href={link.path}
               className={`font-medium transition-colors ${
                 location === link.path 
-                  ? "text-primary" 
-                  : "text-gray-700 hover:text-primary"
+                  ? "text-[#232625] font-bold" 
+                  : "text-gray-700 hover:text-[#232625]"
               }`}
             >
               {link.label}
@@ -92,7 +92,7 @@ const Header = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white w-full shadow-md overflow-hidden"
+            className="md:hidden bg-[#bab7ad] w-full shadow-md overflow-hidden"
           >
             <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
               {navLinks.map((link) => (
@@ -101,8 +101,8 @@ const Header = () => {
                   href={link.path}
                   className={`py-2 font-medium transition-colors ${
                     location === link.path 
-                      ? "text-primary" 
-                      : "text-gray-700 hover:text-primary"
+                      ? "text-[#232625] font-bold" 
+                      : "text-gray-700 hover:text-[#232625]"
                   }`}
                 >
                   {link.label}

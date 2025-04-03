@@ -31,12 +31,12 @@ const Home = () => {
           
           <MotionSection delay={0.4}>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/80 text-white">
+              <Button asChild size="lg" className="bg-[#232625] hover:bg-[#232625]/80 text-white">
                 <Link href="/products">
                   Explore Products
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="bg-white hover:bg-gray-100 text-primary">
+              <Button asChild variant="outline" size="lg" className="bg-white hover:bg-gray-100 text-[#232625] border-[#232625]">
                 <Link href="/contact">
                   Contact Us
                 </Link>
@@ -72,7 +72,7 @@ const Home = () => {
       </section>
       
       {/* Quick Overview */}
-      <section className="py-16 bg-[#F9F9F9]">
+      <section className="py-16 bg-[#bab7ad]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 uppercase font-montserrat">
             Why Lumicerra Stands Out
@@ -135,14 +135,14 @@ const Home = () => {
       </section>
       
       {/* Call To Action */}
-      <section className="py-12 bg-primary text-white">
+      <section className="py-12 bg-[#232625] text-white">
         <div className="container mx-auto px-4 text-center">
           <MotionSection>
             <h2 className="text-3xl font-bold mb-6 font-montserrat">Ready to Transform Your Lighting Experience?</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
               Our team of experts is ready to help you find the perfect LED lighting solution for your project.
             </p>
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 font-bold">
+            <Button asChild size="lg" className="bg-white text-[#232625] hover:bg-gray-100 hover:text-[#232625] font-bold">
               <Link href="/contact">
                 Get In Touch Today
               </Link>

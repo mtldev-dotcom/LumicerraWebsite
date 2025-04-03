@@ -2,10 +2,11 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Send, Linkedin, Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#333333] text-white py-12">
+    <footer className="bg-[#232625] text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Quick Links */}
@@ -75,17 +76,17 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors text-xl">
-                <i className="fab fa-linkedin"></i>
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Linkedin size={24} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors text-xl">
-                <i className="fab fa-instagram"></i>
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Instagram size={24} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors text-xl">
-                <i className="fab fa-facebook"></i>
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Facebook size={24} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors text-xl">
-                <i className="fab fa-twitter"></i>
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Twitter size={24} />
               </a>
             </div>
             
@@ -98,8 +99,8 @@ const Footer = () => {
                 placeholder="Your Email"
                 className="rounded-r-none bg-white text-gray-700"
               />
-              <Button className="rounded-l-none px-4">
-                <i className="fas fa-paper-plane"></i>
+              <Button className="rounded-l-none px-4 bg-[#bab7ad] hover:bg-[#9b988f] text-[#232625]">
+                <Send size={18} />
               </Button>
             </div>
           </motion.div>
