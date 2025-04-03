@@ -1,0 +1,80 @@
+Create a clean, modern, and responsive website for Lumicerra – LED Lighting Systems, a Canadian manufacturer of innovative, ultra-thin, waterproof LED light panels used across architectural, commercial, and maritime sectors.
+
+The website should reflect technical innovation, durability, and elegance, with an emphasis on trust, performance, and versatility.
+
+⸻
+
+Visual Style & Branding
+	•	Overall Look: Minimalist, modern, and professional with subtle lighting accents. Think high-tech meets industrial design, with an elegant, trustworthy presence.
+	•	Color Palette:
+	•	Background: Pure white or very light gray (#F9F9F9)
+	•	Primary Accent: Electric blue or tech-inspired blue (#1976D2)
+	•	Secondary Accent: Soft gray tones (#D1D5DB), occasional use of charcoal or graphite (#333333)
+	•	CTA Buttons: Clean, filled buttons in deep blue with hover transitions to lighter shades
+	•	Typography:
+	•	Headings: Use a strong modern sans-serif like Poppins, Montserrat, or Raleway — uppercase for headings.
+	•	Body: Use a clean, readable sans-serif like Inter or Lato with generous spacing.
+	•	Imagery: High-quality images of LED panels in real-world environments — signage, pools, docks, architectural facades. Include technical visuals and lighting effects.
+	•	Animation: Smooth scroll animations, fade-ins, subtle parallax in the hero section or background shapes.
+
+⸻
+
+Site Structure (Wireframe Inspired)
+	1.	Header
+	•	Logo (top left)
+	•	Navigation Menu (right-aligned): Home, Products, Why Choose Us, Applications, Projects, Contact
+	•	Sticky header on scroll with subtle shadow
+	2.	Home Page
+	•	Hero Section: Full-width image or video background of LED panels in action, overlaid with:
+	•	Headline: “Durable – Economical – Unmatched”
+	•	Subheadline: “Proudly Canadian. Ultra-thin, waterproof LED light panels built to last.”
+	•	Buttons: “Explore Products” (primary), “Contact Us” (secondary)
+	•	Intro Section: 2-column layout — short paragraph on Lumicerra’s mission + image
+	•	Quick Overview (grid): Icons with short texts:
+	•	100+ Applications
+	•	Canadian-Made
+	•	Waterproof & Maintenance-Free
+	•	Unmatched Brightness
+	•	Call to Action Strip with background pattern and CTA
+	3.	Products Page
+	•	Grid layout with product categories:
+	•	Architectural Lighting, Commercial Signage, Signalization, Maritime, Pool & Dock, Custom
+	•	Each card should include an image, short description, and link to detail
+	•	Technical Specs (accordion or tab layout)
+	•	Downloadable datasheet sections (optional)
+	4.	Why Choose Us
+	•	Technical Highlights (icon list or feature grid):
+	•	½” or ¾” Thickness, Maintenance-Free, Waterproof, Easy to Install
+	•	Blockquote or slider for Testimonials
+	•	Info section about manufacturing process and materials (resin-based, pressure-resistant tech)
+	5.	Applications Page
+	•	Mosaic or column layout of application types with photos:
+	•	Signage, Signalization, Ambient Lighting, Nautical, Industrial, Architectural
+	•	Highlight adaptability and custom solutions for different sectors
+	6.	Projects Page
+	•	Gallery or portfolio layout
+	•	Each project with a hover effect and click-through for:
+	•	Title, Application Type, Key Outcomes
+	•	Include multicolor LED control example, illuminated pathways, exterior facades, etc.
+	7.	Contact Page
+	•	Clean contact form with Name, Email, Message
+	•	Contact Info:
+	•	Phone: 514 467-5454
+	•	Email: info@lumicerra.com
+	•	Address: 12740 Langelier Boulevard, Suite 5, Montreal, QC H1G 3N1
+	•	Embedded Google Map with marker
+	•	Optional FAQ accordion below
+	8.	Footer
+	•	3-column layout:
+	•	Quick links to main pages
+	•	Social media icons (LinkedIn, Instagram, etc.)
+	•	Legal section: © 2025 Lumicerra. All rights reserved.
+
+⸻
+
+Features to Include
+	•	Fully mobile-responsive
+	•	Light/dark mode optional
+	•	Smooth scroll and hover effects
+	•	Accessibility-friendly
+	•	SEO-optimized page structure
