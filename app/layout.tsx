@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import '../client/src/index.css'; // Import the existing CSS
 import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from './components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Lumicerra LED Lighting Systems',
