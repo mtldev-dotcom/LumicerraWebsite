@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { MotionSection, PageTransition } from "@/components/ui/motion-section";
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { MotionSection, PageTransition } from "../components/ui/motion-section";
 import { useTranslation } from "react-i18next";
-import { products } from "@/lib/data";
+import { products } from "../lib/data";
 
 export default function Products() {
   const { t } = useTranslation();
