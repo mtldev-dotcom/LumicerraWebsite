@@ -1,0 +1,159 @@
+{
+  "header": {
+    "home": "Accueil",
+    "products": "Produits",
+    "whyChooseUs": "Pourquoi Nous Choisir",
+    "applications": "Applications",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "DURABLE – ÉCONOMIQUE – INÉGALÉ",
+      "subtitle": "Fièrement canadien. Panneaux lumineux LED ultra-minces, imperméables et conçus pour durer.",
+      "exploreProducts": "Explorer les Produits",
+      "contactUs": "Contactez-Nous"
+    },
+    "intro": {
+      "title": "Solutions d'Éclairage LED Innovantes",
+      "description": "Lumicerra propose des systèmes d'éclairage LED de pointe conçus pour des applications commerciales et résidentielles. Nos solutions écoénergétiques allient durabilité et attrait esthétique.",
+      "learnMore": "En Savoir Plus"
+    },
+    "features": {
+      "title": "Pourquoi Choisir Lumicerra",
+      "energyEfficient": {
+        "title": "Économie d'Énergie",
+        "description": "Nos panneaux LED consomment jusqu'à 80 % moins d'énergie que l'éclairage traditionnel tout en offrant une luminosité supérieure."
+      },
+      "durableDesign": {
+        "title": "Conception Durable",
+        "description": "Résistant aux intempéries et conçu pour résister aux conditions extrêmes avec une garantie leader de l'industrie."
+      },
+      "easyInstallation": {
+        "title": "Installation Facile",
+        "description": "La conception modulaire permet une installation rapide et simple pour les nouvelles constructions et les rénovations."
+      },
+      "customSolutions": {
+        "title": "Solutions Personnalisées",
+        "description": "Options d'éclairage sur mesure pour répondre aux exigences spécifiques de votre projet unique."
+      }
+    },
+    "testimonials": {
+      "title": "Ce Que Disent Nos Clients",
+      "viewProjects": "Voir Nos Projets"
+    }
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Découvrez notre gamme de solutions d'éclairage LED premium",
+    "specifications": "Spécifications",
+    "features": "Caractéristiques",
+    "applications": "Applications",
+    "downloadDatasheet": "Télécharger la Fiche Technique"
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi Choisir Lumicerra",
+    "quality": {
+      "title": "Qualité et Durabilité",
+      "description": "Nos systèmes LED sont conçus pour durer, avec un contrôle qualité rigoureux et des matériaux de qualité supérieure."
+    },
+    "efficiency": {
+      "title": "Efficacité Énergétique",
+      "description": "Réduisez considérablement la consommation d'énergie tout en maintenant des performances d'éclairage optimales."
+    },
+    "sustainability": {
+      "title": "Durabilité",
+      "description": "Conceptions respectueuses de l'environnement avec des composants recyclables et une empreinte carbone réduite."
+    },
+    "support": {
+      "title": "Support Client",
+      "description": "Assistance technique experte de la planification à l'installation et au-delà."
+    },
+    "innovation": {
+      "title": "Innovation Continue",
+      "description": "Recherche et développement continus pour vous apporter les dernières innovations en matière de technologie d'éclairage."
+    },
+    "warranty": {
+      "title": "Garantie Leader du Marché",
+      "description": "Tranquillité d'esprit avec notre garantie complète et nos garanties de produit."
+    }
+  },
+  "applications": {
+    "title": "Applications",
+    "subtitle": "Solutions d'éclairage polyvalentes pour tout environnement",
+    "commercial": {
+      "title": "Commercial",
+      "description": "Idéal pour les immeubles de bureaux, les espaces commerciaux et les établissements hôteliers."
+    },
+    "residential": {
+      "title": "Résidentiel",
+      "description": "Améliorez votre maison avec un éclairage écoénergétique et élégant."
+    },
+    "industrial": {
+      "title": "Industriel",
+      "description": "Solutions durables pour entrepôts, usines et installations de production."
+    },
+    "outdoor": {
+      "title": "Extérieur",
+      "description": "Éclairage résistant aux intempéries pour l'aménagement paysager, la signalisation et les espaces publics."
+    },
+    "architectural": {
+      "title": "Architectural",
+      "description": "Éclairage d'accentuation pour mettre en valeur les caractéristiques et les conceptions architecturales."
+    },
+    "speciality": {
+      "title": "Applications Spéciales",
+      "description": "Solutions personnalisées pour des défis d'éclairage uniques."
+    }
+  },
+  "projects": {
+    "title": "Nos Projets",
+    "subtitle": "Découvrez comment nos solutions d'éclairage LED transforment les espaces",
+    "viewDetails": "Voir les Détails",
+    "location": "Emplacement",
+    "projectType": "Type de Projet",
+    "completionDate": "Date d'Achèvement",
+    "challenge": "Défi",
+    "solution": "Notre Solution",
+    "results": "Résultats"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Entrez en contact avec notre équipe",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "message": "Message",
+      "submit": "Envoyer"
+    },
+    "info": {
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": "Heures d'Ouverture"
+    },
+    "success": "Votre message a été envoyé avec succès. Nous vous contacterons bientôt.",
+    "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+  },
+  "footer": {
+    "products": "Produits",
+    "resources": "Ressources",
+    "company": "Entreprise",
+    "support": "Support",
+    "newsletter": {
+      "title": "Abonnez-vous à notre newsletter",
+      "placeholder": "Votre email",
+      "subscribe": "S'abonner"
+    },
+    "copyright": "© 2025 Systèmes d'Éclairage LED Lumicerra. Tous droits réservés.",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation"
+  },
+  "languageSelector": {
+    "language": "Langue",
+    "english": "Anglais",
+    "french": "Français"
+  }
+}

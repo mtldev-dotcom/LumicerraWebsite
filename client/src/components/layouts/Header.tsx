@@ -3,6 +3,8 @@ import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMediaQuery } from "@/hooks/use-mobile";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "@/components/LanguageSelector";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
