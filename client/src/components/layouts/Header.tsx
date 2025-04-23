@@ -35,41 +35,43 @@ const Header = () => {
   }, [location]);
 
   const navLinks = [
-    { path: "/", label: t('header.home') },
-    { path: "/products", label: t('header.products') },
-    { path: "/why-choose-us", label: t('header.whyChooseUs') },
-    { path: "/applications", label: t('header.applications') },
-    { path: "/projects", label: t('header.projects') },
-    { path: "/contact", label: t('header.contact') },
+    { path: "/", label: t("header.home") },
+    { path: "/products", label: t("header.products") },
+    { path: "/why-choose-us", label: t("header.whyChooseUs") },
+    { path: "/applications", label: t("header.applications") },
+    { path: "/projects", label: t("header.projects") },
+    { path: "/contact", label: t("header.contact") },
   ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full bg-[#bab7ad] z-50 transition-all duration-300 ${isScrolled ? "shadow-md" : ""}`}>
+    <header
+      className={`fixed top-0 left-0 w-full bg-[#bab7ad] z-50 transition-all duration-300 ${isScrolled ? "shadow-md" : ""}`}
+    >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="h-12"
           >
-            <img 
-              src="/assets/C6D7B471-178C-4A3D-B15A-EBF22B1524FB.png" 
-              alt="Lumicerra Logo" 
+            <img
+              src="/assets/lumicerra-logo.png"
+              alt="Lumicerra Logo"
               className="h-full"
             />
           </motion.div>
         </Link>
-        
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center">
           <nav className="flex space-x-8 mr-4">
             {navLinks.map((link) => (
-              <Link 
-                key={link.path} 
+              <Link
+                key={link.path}
                 href={link.path}
                 className={`font-medium transition-colors ${
-                  location === link.path 
-                    ? "text-[#232625] font-bold" 
+                  location === link.path
+                    ? "text-[#232625] font-bold"
                     : "text-gray-700 hover:text-[#232625]"
                 }`}
               >
@@ -79,11 +81,11 @@ const Header = () => {
           </nav>
           <LanguageSelector />
         </div>
-        
+
         {/* Mobile Navigation Toggle and Language Selector */}
         <div className="md:hidden flex items-center">
           <LanguageSelector />
-          <button 
+          <button
             className="ml-2 text-gray-600 focus:outline-none"
             onClick={toggleMenu}
             aria-label="Toggle menu"
@@ -92,7 +94,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Navigation Menu */}
       <AnimatePresence>
         {isOpen && isMobile && (
@@ -105,12 +107,12 @@ const Header = () => {
           >
             <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
               {navLinks.map((link) => (
-                <Link 
-                  key={link.path} 
+                <Link
+                  key={link.path}
                   href={link.path}
                   className={`py-2 font-medium transition-colors ${
-                    location === link.path 
-                      ? "text-[#232625] font-bold" 
+                    location === link.path
+                      ? "text-[#232625] font-bold"
                       : "text-gray-700 hover:text-[#232625]"
                   }`}
                 >
