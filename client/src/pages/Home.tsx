@@ -3,8 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MotionSection, MotionImage, PageTransition } from "@/components/ui/motion-section";
 import { Link } from "wouter";
 import { Layers, Flag, Droplet, Lightbulb } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <PageTransition>
       {/* Hero Section */}
@@ -19,13 +21,13 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <MotionSection>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 uppercase tracking-wider font-montserrat">
-              Durable – Economical – Unmatched
+              {t('home.hero.title')}
             </h1>
           </MotionSection>
           
           <MotionSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-              Proudly Canadian. Ultra-thin, waterproof LED light panels built to last.
+              {t('home.hero.subtitle')}
             </p>
           </MotionSection>
           
@@ -33,12 +35,12 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg" className="bg-[#232625] hover:bg-[#232625]/80 text-white">
                 <Link href="/products">
-                  Explore Products
+                  {t('home.hero.exploreProducts')}
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-white hover:bg-gray-100 text-[#232625] border-[#232625]">
                 <Link href="/contact">
-                  Contact Us
+                  {t('home.hero.contactUs')}
                 </Link>
               </Button>
             </div>
