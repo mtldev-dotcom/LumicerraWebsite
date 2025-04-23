@@ -1,133 +1,135 @@
-// Product data
+// Products Data
 export const products = [
   {
-    name: "Ultra-Thin LED Panel",
-    description: "Our flagship ultra-thin LED panel with superior brightness and energy efficiency.",
-    image: "/assets/78A7B5FE-F0AB-476A-9D4A-7DB5F48064DA.png",
-    features: [
-      "Only 3mm thick - the thinnest LED panel on the market",
-      "IP67 waterproof rating for indoor and outdoor use",
-      "Energy efficient with 50,000+ hours lifespan",
-      "Customizable sizes and color temperatures",
-      "Uniform light distribution with no visible hotspots"
-    ]
+    id: 1,
+    title: "Architectural Lighting",
+    description: "Ultra-thin LED panels designed for seamless integration into modern architectural designs.",
+    image: "/assets/AEAD3BD7-F387-4153-9824-FB7D16B0E1BF.png"
   },
   {
-    name: "Marine Grade LED Lighting",
-    description: "Specially designed LED lighting solutions for maritime applications and harsh environments.",
-    image: "/assets/BD6A178A-4BFE-4AE9-A57A-5B12EC1FF777.png",
-    features: [
-      "Corrosion-resistant materials for saltwater environments",
-      "Vibration-resistant design for maritime use",
-      "IP68 fully waterproof rating",
-      "UV-resistant housing prevents yellowing",
-      "Low power consumption ideal for vessel power systems"
-    ]
+    id: 2,
+    title: "Commercial Signage",
+    description: "Bright, durable LED solutions for eye-catching commercial signage with maximum visibility.",
+    image: "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
   },
   {
-    name: "Architectural LED Solutions",
-    description: "Elegant, customizable LED lighting systems for architectural and design applications.",
-    image: "/assets/C6D7B471-178C-4A3D-B15A-EBF22B1524FB.png",
-    features: [
-      "Seamless integration with architectural elements",
-      "Flexible mounting options for creative installations",
-      "Dimmable and controllable via smart systems",
-      "Ultra-slim profile for discrete installation",
-      "Available in custom shapes and configurations"
-    ]
+    id: 3,
+    title: "Maritime Lighting",
+    description: "Waterproof, corrosion-resistant LED panels designed for marine environments.",
+    image: "https://images.unsplash.com/photo-1504275490777-2f2aae751225?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2344&q=80"
   },
   {
-    name: "Commercial LED Panels",
-    description: "High-efficiency LED lighting solutions optimized for commercial and retail spaces.",
-    image: "/assets/F6D5946A-5FCE-4D6D-A359-519212A4CEEB.png",
-    features: [
-      "Flicker-free operation for healthy work environments",
-      "High CRI (95+) for accurate color rendering",
-      "Energy savings of up to 75% over traditional lighting",
-      "Modular design for easy installation and maintenance",
-      "Integration with building management systems"
-    ]
+    id: 4,
+    title: "Pool & Dock Lighting",
+    description: "Submersible LED panels that provide beautiful illumination for pools and docks.",
+    image: "/assets/F6D5946A-5FCE-4D6D-A359-519212A4CEEB.png"
+  },
+  {
+    id: 5,
+    title: "Signalization",
+    description: "High-visibility LED panels for traffic and safety signalization applications.",
+    image: "https://images.unsplash.com/photo-1565194481104-39d1ee1b8bcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+  },
+  {
+    id: 6,
+    title: "Custom Solutions",
+    description: "Bespoke LED lighting designed and manufactured to your specific requirements.",
+    image: "/assets/42E88DE0-FE7B-4DE3-8B72-4D2C44C3DA82.png"
   }
 ];
 
-// Testimonial data
+// Testimonials Data
 export const testimonials = [
   {
-    name: "John Bentley",
-    title: "Architect, Bentley Design Studios",
-    quote: "Lumicerra's LED panels have transformed how we approach lighting in our architectural projects. The ultra-thin profile allows us to integrate lighting in ways that were previously impossible.",
-    image: "/assets/testimonial1.jpg"
+    quote: "Lumicerra's LED panels transformed our marina with reliable, beautiful lighting that has withstood three seasons of harsh weather without a single issue.",
+    company: "Marina Del Rey Properties"
   },
   {
-    name: "Sarah Johnson",
-    title: "Director of Operations, OceanLine Maritime",
-    quote: "We've installed Lumicerra's marine-grade LED lighting across our fleet of vessels. The durability in harsh conditions is impressive, and we've seen significant energy savings.",
-    image: "/assets/testimonial2.jpg"
+    quote: "The energy efficiency and minimal maintenance of these LED panels have significantly reduced our operational costs while enhancing our building's aesthetic appeal.",
+    company: "Vertical Architects Inc."
   },
   {
-    name: "Michael Chen",
-    title: "Facility Manager, Westfield Commercial Center",
-    quote: "The improvement in lighting quality and reduction in maintenance costs has been remarkable. We've rolled out Lumicerra LED panels across all our commercial properties.",
-    image: "/assets/testimonial3.jpg"
+    quote: "Lumicerra's custom solutions exceeded our expectations for our complex signage project. Their team was responsive and delivered exactly what we needed.",
+    company: "Montreal Commercial Development"
   }
 ];
 
-// Application data
+// Applications Data
 export const applications = [
   {
-    title: "Maritime",
-    description: "Rugged, waterproof lighting solutions for boats, ships, and marine environments that withstand harsh conditions while providing superior illumination.",
-    image: "/assets/maritime.jpg",
-    examples: ["Vessel interiors", "Dock lighting", "Underwater illumination", "Navigation systems"]
+    title: "Signage",
+    description: "High-impact, energy-efficient illumination for business signage, billboards, and displays.",
+    image: "https://images.unsplash.com/photo-1520520688967-5b43dd635a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
   },
   {
-    title: "Commercial",
-    description: "Energy-efficient lighting for offices, retail spaces, and industrial environments that reduce operational costs and improve workspace quality.",
-    image: "/assets/commercial.jpg",
-    examples: ["Office spaces", "Retail displays", "Warehouses", "Hospitality venues"]
+    title: "Signalization",
+    description: "Clear, reliable lighting for traffic signals, safety indicators, and directional guidance.",
+    image: "https://images.unsplash.com/photo-1604328727766-a151d1045ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
   },
   {
-    title: "Residential",
-    description: "Elegant, customizable lighting solutions that enhance living spaces while providing energy savings and modern aesthetics.",
-    image: "/assets/residential.jpg",
-    examples: ["Kitchen lighting", "Living areas", "Bathrooms", "Outdoor spaces"]
+    title: "Ambient Lighting",
+    description: "Create atmosphere and enhance spaces with elegant, efficient lighting solutions.",
+    image: "/assets/AEAD3BD7-F387-4153-9824-FB7D16B0E1BF.png"
+  },
+  {
+    title: "Bathroom & Kitchen",
+    description: "Waterproof, stylish lighting for bathrooms, showers, and modern kitchen designs.",
+    image: "/assets/78A7B5FE-F0AB-476A-9D4A-7DB5F48064DA.png"
+  },
+  {
+    title: "Pools & Water Features",
+    description: "Waterproof, salt-resistant lighting for pools, spas, and water features.",
+    image: "/assets/F6D5946A-5FCE-4D6D-A359-519212A4CEEB.png"
   },
   {
     title: "Architectural",
-    description: "Creative lighting solutions that integrate seamlessly with architectural designs, enhancing structural features and creating visual impact.",
-    image: "/assets/architectural.jpg",
-    examples: ["Feature walls", "Ceilings", "External facades", "Art installations"]
+    description: "Enhance building facades, interiors, and landscape features with elegant illumination.",
+    image: "/assets/42E88DE0-FE7B-4DE3-8B72-4D2C44C3DA82.png"
   }
 ];
 
-// Project data
+// Projects Data
 export const projects = [
   {
-    title: "Vancouver Convention Center",
-    description: "Complete LED lighting retrofit for the Vancouver Convention Center, reducing energy consumption by 68% while improving light quality throughout the facility.",
-    image: "/assets/project1.jpg",
-    location: "Vancouver, BC",
-    year: "2023"
+    title: "Modern Residential Home",
+    category: "Architectural",
+    type: "Exterior Facade",
+    description: "Integrated LED lighting for modern home exterior with accent lighting on steps and pathways.",
+    image: "/assets/42E88DE0-FE7B-4DE3-8B72-4D2C44C3DA82.png"
   },
   {
-    title: "Pacific Marina Renovation",
-    description: "Custom marine-grade LED installation across the Pacific Marina, providing waterproof, efficient lighting for docks, walkways, and vessel berths.",
-    image: "/assets/project2.jpg",
-    location: "Victoria, BC",
-    year: "2022"
+    title: "Outdoor Patio Design",
+    category: "Residential",
+    type: "Outdoor Living",
+    description: "Clean, minimalist LED strip lighting for contemporary patio space with multi-zone control.",
+    image: "/assets/AEAD3BD7-F387-4153-9824-FB7D16B0E1BF.png"
   },
   {
-    title: "Highrise Office Tower",
-    description: "Architectural LED lighting for the interior and exterior of a 35-story office tower, creating a distinctive night-time presence in the urban skyline.",
-    image: "/assets/project3.jpg",
-    location: "Toronto, ON",
-    year: "2023"
+    title: "Toronto Retail Center",
+    category: "Commercial",
+    type: "Signage",
+    description: "High-visibility LED signage for multiple retail storefronts in a shopping center.",
+    image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
   },
   {
-    title: "Luxury Residential Development",
-    description: "Comprehensive LED lighting systems for a premium residential development, featuring custom solutions for common areas and individual units.",
-    image: "/assets/project4.jpg",
-    location: "Montreal, QC",
-    year: "2022"
+    title: "Luxury Bathroom Renovation",
+    category: "Residential",
+    type: "Interior Lighting",
+    description: "Integrated LED panels in bathroom walls providing elegant, bright, shadow-free illumination.",
+    image: "/assets/BD6A178A-4BFE-4AE9-A57A-5B12EC1FF777.png"
+  },
+  {
+    title: "Luxury Indoor Pool",
+    category: "Residential",
+    type: "Pool Lighting",
+    description: "Color-changing underwater LED panels creating ambiance for a high-end residential pool.",
+    image: "/assets/F6D5946A-5FCE-4D6D-A359-519212A4CEEB.png"
+  },
+  {
+    title: "Contemporary Bathroom Design",
+    category: "Residential",
+    type: "Interior Lighting",
+    description: "Waterproof LED panels integrated into bathroom walls for modern, clean aesthetics.",
+    image: "/assets/78A7B5FE-F0AB-476A-9D4A-7DB5F48064DA.png"
   }
 ];

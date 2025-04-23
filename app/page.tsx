@@ -1,16 +1,14 @@
 'use client';
 
-import React from 'react';
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { MotionSection, MotionImage, PageTransition } from "./components/ui/motion-section";
-import Link from 'next/link';
+import Link from "next/link";
 import { Layers, Flag, Droplet, Lightbulb } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const { t } = useTranslation();
-  
   return (
     <PageTransition>
       {/* Hero Section */}

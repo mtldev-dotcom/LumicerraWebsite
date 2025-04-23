@@ -43,21 +43,13 @@ export default function Products() {
                   <div className="h-64 overflow-hidden">
                     <img 
                       src={product.image} 
-                      alt={product.name} 
+                      alt={product.title} 
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-2 font-montserrat">{product.name}</h3>
+                    <h3 className="text-xl font-bold mb-2 font-montserrat">{product.title}</h3>
                     <p className="text-sm text-gray-600 mb-4">{product.description}</p>
-                    <div className="space-y-2">
-                      {product.features.map((feature, i) => (
-                        <div key={i} className="flex items-start">
-                          <div className="text-primary mr-2">•</div>
-                          <p className="text-sm text-gray-700">{feature}</p>
-                        </div>
-                      ))}
-                    </div>
                     <div className="mt-6 flex justify-between items-center">
                       <Button variant="outline" size="sm" className="border-[#232625] text-[#232625]">
                         Technical Specs
