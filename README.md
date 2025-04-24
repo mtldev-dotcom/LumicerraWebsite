@@ -1,88 +1,67 @@
-# Lumicerra LED Lighting Systems
+# Lumicerra Website (Next.js)
 
-A modern, responsive website for Lumicerra LED Lighting Systems - a Canadian manufacturer of innovative LED lighting solutions for commercial and residential applications.
+This is the official website for Lumicerra LED Lighting Systems, built with Next.js.
 
-![Lumicerra LED Lighting](/public/assets/IMG_4328.png)
+## Migration from React to Next.js
 
-## 🔆 Features
+This project was originally built with React and Vite, and has been migrated to Next.js for better SEO, server-side rendering, and a more robust development experience. The migration involved:
 
-- **Modern Design**: Clean, responsive UI built with Next.js, React, and Tailwind CSS
-- **Bilingual Support**: Full English and French language support
-- **Motion Effects**: Smooth animations and transitions for an engaging user experience
-- **Responsive Layout**: Optimized for all device sizes from mobile to desktop
-- **Product Showcase**: Detailed presentation of LED lighting solutions
-- **Application Examples**: Visual demonstrations of lighting applications
-- **Contact Form**: Easy-to-use form for customer inquiries
-- **Project Gallery**: Portfolio of completed lighting projects
+1. Converting the file structure to follow Next.js App Router pattern
+2. Updating import paths and component dependencies
+3. Setting up proper i18n configuration for internationalization
+4. Ensuring UI components are properly client-side hydrated
 
-## 🛠️ Tech Stack
+## Project Structure
 
-- **Frontend**: Next.js, React, TypeScript
-- **Styling**: Tailwind CSS with shadcn/ui components
-- **Animation**: Framer Motion
-- **Internationalization**: i18next
-- **Backend**: Express (Node.js)
-- **Form Handling**: React Hook Form with Zod validation
-- **State Management**: React Query
-
-## 📋 Pages
-
-- **Home**: Company introduction and product highlights
-- **Products**: Detailed product catalog
-- **Applications**: Various use cases for LED lighting
-- **Projects**: Gallery of completed installations
-- **Why Choose Us**: Company advantages and testimonials
-- **Contact**: Contact form and company information
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 16 or newer
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/lumicerra-led-website.git
-   cd lumicerra-led-website
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:5000](http://localhost:5000) in your browser.
-
-## 📦 Build for Production
-
-To build the application for production:
-
-```bash
-npm run build
+```
+app/                     # Next.js App Router directory
+  /components/           # Reusable UI components
+    /layouts/            # Layout components like Header and Footer
+    /ui/                 # UI components (shadcn/ui)
+  /hooks/                # Custom React hooks
+  /lib/                  # Utility functions and data
+  /locales/              # Internationalization files
+  /[routes]/             # App routes (page.tsx files)
+public/                  # Static assets
 ```
 
-To start the production server:
+## Main Technologies
 
-```bash
-npm start
+- **Next.js**: React framework for server-side rendering
+- **React**: UI library
+- **Tailwind CSS**: Utility-first CSS framework
+- **Framer Motion**: Animation library
+- **i18next**: Internationalization
+- **shadcn/ui**: UI component collection
+
+## Development Scripts
+
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run start`: Start production server
+
+## Cleanup
+
+A cleanup script (`cleanup.ps1`) has been provided to remove the old React/Vite files that are no longer needed. To run it:
+
+```
+powershell -ExecutionPolicy Bypass -File .\cleanup.ps1
 ```
 
-## 🌐 Deployment
+## Internationalization
 
-This project can be deployed on any Node.js hosting platform such as Vercel, Netlify, or traditional hosting.
+The website supports both English and French languages. The translation files are located in:
 
-## 📝 License
+- `/app/locales/en/translation.json`
+- `/app/locales/fr/translation.json`
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+To add or modify translations, edit these files and the changes will be automatically reflected in the UI.
 
----
+## Adding New Pages
 
-Developed by [Your Name/Company] for Lumicerra LED Lighting Systems
+To add new pages to the website, create a new directory in the `app` folder with a `page.tsx` file. The URL will match the directory structure.
+
+Example:
+```
+app/about/page.tsx => /about
+app/products/led-panels/page.tsx => /products/led-panels

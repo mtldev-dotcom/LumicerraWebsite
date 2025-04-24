@@ -2,19 +2,16 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { useMediaQuery } from "../../hooks/use-mobile";
+import { useMediaQuery } from "@/app/hooks/use-mobile";
 import { Menu, X } from "lucide-react";
-import { useTranslation } from "react-i18next";
-import LanguageSelector from "../LanguageSelector";
+import ClientLanguageSwitcher from "@/app/components/ClientLanguageSwitcher";
+import { ClientNavLinks } from "./ClientNavLinks";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const isMobile = useMediaQuery("(max-width: 768px)");
-  const pathname = usePathname();
-  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,20 +28,6 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  useEffect(() => {
-    // Close mobile menu when location changes
-    setIsOpen(false);
-  }, [pathname]);
-
-  const navLinks = [
-    { path: "/", label: t("header.home") },
-    { path: "/products", label: t("header.products") },
-    { path: "/why-choose-us", label: t("header.whyChooseUs") },
-    { path: "/applications", label: t("header.applications") },
-    { path: "/projects", label: t("header.projects") },
-    { path: "/contact", label: t("header.contact") },
-  ];
 
   return (
     <header
@@ -67,27 +50,13 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center">
-          <nav className="flex space-x-8 mr-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                href={link.path}
-                className={`font-medium transition-colors ${
-                  pathname === link.path
-                    ? "text-[#232625] font-bold"
-                    : "text-gray-700 hover:text-[#232625]"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-          <LanguageSelector />
+          <ClientNavLinks />
+          <ClientLanguageSwitcher />
         </div>
 
         {/* Mobile Navigation Toggle and Language Selector */}
         <div className="md:hidden flex items-center">
-          <LanguageSelector />
+          <ClientLanguageSwitcher />
           <button
             className="ml-2 text-gray-600 focus:outline-none"
             onClick={toggleMenu}
@@ -108,21 +77,7 @@ const Header = () => {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-[#bab7ad] w-full shadow-md overflow-hidden"
           >
-            <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  href={link.path}
-                  className={`py-2 font-medium transition-colors ${
-                    pathname === link.path
-                      ? "text-[#232625] font-bold"
-                      : "text-gray-700 hover:text-[#232625]"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+            <ClientNavLinks isMobile={true} />
           </motion.div>
         )}
       </AnimatePresence>

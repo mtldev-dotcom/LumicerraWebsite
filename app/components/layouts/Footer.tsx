@@ -1,9 +1,9 @@
 'use client';
 
-import Link from 'next/link';
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input"; // We need to create this component
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
 import { Send, Linkedin, Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {

@@ -1,61 +1,46 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FrFlagIcon, EnFlagIcon } from '@/app/components/ui/flag-icons';
 import { Button } from '@/app/components/ui/button';
 
-const LanguageSelector: React.FC = () => {
+// This component only renders on the client side to avoid hydration issues
+const ClientLanguageSwitcher: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.language || 'fr');
+  const [mounted, setMounted] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState('fr'); // Default to French initially
 
-  // Ensure we have the correct language state on initial load
+  // Only run client-side to avoid hydration mismatches
   useEffect(() => {
-    // Use localStorage or URL param if available
-    const urlParams = new URLSearchParams(window.location.search);
-    const lngParam = urlParams.get('lng');
-    
-    if (lngParam && (lngParam === 'en' || lngParam === 'fr')) {
-      setCurrentLanguage(lngParam);
-    } else {
-      const savedLng = localStorage.getItem('i18nextLng');
-      if (savedLng && (savedLng === 'en' || savedLng === 'fr')) {
-        setCurrentLanguage(savedLng);
-      } else {
-        // Default to i18n language or fr
-        setCurrentLanguage(i18n.language || 'fr');
-      }
-    }
+    // Get the actual language once mounted on client
+    const detectedLanguage = i18n.language || 'fr';
+    setCurrentLanguage(detectedLanguage);
+    setMounted(true);
   }, [i18n.language]);
+
+  // Don't render anything during SSR or until client-side code runs
+  if (!mounted) {
+    return <div className="w-5 h-5"></div>; // Placeholder with same size
+  }
 
   const toggleLanguage = () => {
     // Switch to the opposite language
     const newLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
     
     try {
-      // Update i18next language
-      i18n.changeLanguage(newLanguage);
-      
       // Save to localStorage for persistence
       localStorage.setItem('i18nextLng', newLanguage);
-      
-      console.log(`Language changed to: ${newLanguage}`);
       
       // Create a URL with the new language parameter
       const url = new URL(window.location.href);
       url.searchParams.set('lng', newLanguage);
       
-      // Store indication that we're doing a language switch
+      // Set a flag that we're doing a language change
       sessionStorage.setItem('languageChangeInProgress', 'true');
       
       // Force a complete hard reload to avoid hydration issues
-      // This completely refreshes the page from the server with the new language
       window.location.href = url.toString();
-      
-      // Immediately after setting the location, reload for a full refresh
-      setTimeout(() => {
-        window.location.reload();
-      }, 50);
     } catch (error) {
       console.error('Error changing language:', error);
     }
@@ -80,4 +65,4 @@ const LanguageSelector: React.FC = () => {
   );
 };
 
-export default LanguageSelector;
+export default ClientLanguageSwitcher;

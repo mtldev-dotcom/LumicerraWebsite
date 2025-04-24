@@ -1,0 +1,159 @@
+{
+  "header": {
+    "home": "Home",
+    "products": "Products",
+    "whyChooseUs": "Why Choose Us",
+    "applications": "Applications",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "DURABLE – ECONOMICAL – UNMATCHED",
+      "subtitle": "Proudly Canadian. Ultra-thin, waterproof LED light panels built to last.",
+      "exploreProducts": "Explore Products",
+      "contactUs": "Contact Us"
+    },
+    "intro": {
+      "title": "Innovative LED Lighting Solutions",
+      "description": "Lumicerra provides state-of-the-art LED lighting systems designed for both commercial and residential applications. Our energy-efficient solutions combine durability with aesthetic appeal.",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Why Choose Lumicerra",
+      "energyEfficient": {
+        "title": "Energy Efficient",
+        "description": "Our LED panels use up to 80% less energy than traditional lighting while providing superior brightness."
+      },
+      "durableDesign": {
+        "title": "Durable Design",
+        "description": "Weather-resistant and built to withstand extreme conditions with an industry-leading warranty."
+      },
+      "easyInstallation": {
+        "title": "Easy Installation",
+        "description": "Modular design allows for quick and simple installation for both new construction and retrofits."
+      },
+      "customSolutions": {
+        "title": "Custom Solutions",
+        "description": "Tailored lighting options to meet the specific requirements of your unique project."
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "viewProjects": "View Our Projects"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our range of premium LED lighting solutions",
+    "specifications": "Specifications",
+    "features": "Features",
+    "applications": "Applications",
+    "downloadDatasheet": "Download Technical Datasheet"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Lumicerra",
+    "quality": {
+      "title": "Quality & Durability",
+      "description": "Our LED systems are built to last, with rigorous quality control and premium materials."
+    },
+    "efficiency": {
+      "title": "Energy Efficiency",
+      "description": "Significantly reduce energy consumption while maintaining optimal lighting performance."
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "description": "Environmentally friendly designs with recyclable components and reduced carbon footprint."
+    },
+    "support": {
+      "title": "Customer Support",
+      "description": "Expert technical assistance from planning through installation and beyond."
+    },
+    "innovation": {
+      "title": "Continuous Innovation",
+      "description": "Ongoing research and development to bring you the latest in lighting technology."
+    },
+    "warranty": {
+      "title": "Industry-Leading Warranty",
+      "description": "Peace of mind with our comprehensive warranty and product guarantees."
+    }
+  },
+  "applications": {
+    "title": "Applications",
+    "subtitle": "Versatile lighting solutions for any environment",
+    "commercial": {
+      "title": "Commercial",
+      "description": "Ideal for office buildings, retail spaces, and hospitality venues."
+    },
+    "residential": {
+      "title": "Residential",
+      "description": "Enhance your home with energy-efficient and stylish lighting."
+    },
+    "industrial": {
+      "title": "Industrial",
+      "description": "Durable solutions for warehouses, factories, and production facilities."
+    },
+    "outdoor": {
+      "title": "Outdoor",
+      "description": "Weather-resistant lighting for landscaping, signage, and public spaces."
+    },
+    "architectural": {
+      "title": "Architectural",
+      "description": "Accent lighting to highlight architectural features and designs."
+    },
+    "speciality": {
+      "title": "Specialty Applications",
+      "description": "Custom solutions for unique lighting challenges."
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "See how our LED lighting solutions transform spaces",
+    "viewDetails": "View Details",
+    "location": "Location",
+    "projectType": "Project Type",
+    "completionDate": "Completion Date",
+    "challenge": "Challenge",
+    "solution": "Our Solution",
+    "results": "Results"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours"
+    },
+    "success": "Your message has been sent successfully. We'll be in touch soon.",
+    "error": "There was an error sending your message. Please try again."
+  },
+  "footer": {
+    "products": "Products",
+    "resources": "Resources",
+    "company": "Company",
+    "support": "Support",
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "placeholder": "Your email",
+      "subscribe": "Subscribe"
+    },
+    "copyright": "© 2025 Lumicerra LED Lighting Systems. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "languageSelector": {
+    "language": "Language",
+    "english": "English",
+    "french": "French"
+  }
+}
