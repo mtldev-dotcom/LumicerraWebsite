@@ -24,10 +24,10 @@ export default function Products() {
         <div className="container mx-auto px-4 text-center">
           <MotionSection>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-wider font-montserrat">
-              Our Products
+              {t('products.title')}
             </h1>
             <p className="text-xl max-w-2xl mx-auto">
-              Explore our range of innovative LED lighting solutions designed for durability, efficiency, and versatility.
+              {t('products.heroSubtitle')}
             </p>
           </MotionSection>
         </div>
@@ -52,10 +52,10 @@ export default function Products() {
                     <p className="text-sm text-gray-600 mb-4">{product.description}</p>
                     <div className="mt-6 flex justify-between items-center">
                       <Button variant="outline" size="sm" className="border-[#232625] text-[#232625]">
-                        Technical Specs
+                        {t('products.technicalSpecs')}
                       </Button>
                       <Button size="sm" className="bg-[#232625] hover:bg-[#232625]/80 text-white">
-                        Contact Us
+                        {t('products.contactUs')}
                       </Button>
                     </div>
                   </CardContent>
@@ -70,12 +70,12 @@ export default function Products() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 text-center">
           <MotionSection>
-            <h2 className="text-3xl font-bold mb-6 font-montserrat">Need a Custom Solution?</h2>
+            <h2 className="text-3xl font-bold mb-6 font-montserrat">{t('products.customSolution.title')}</h2>
             <p className="text-lg mb-8 max-w-3xl mx-auto text-gray-700">
-              Our team can develop tailored lighting solutions for your specific needs. Get in touch with our experts to discuss your requirements.
+              {t('products.customSolution.description')}
             </p>
             <Button size="lg" className="bg-[#232625] hover:bg-[#232625]/80 text-white">
-              Request Custom Quote
+              {t('products.customSolution.buttonText')}
             </Button>
           </MotionSection>
         </div>

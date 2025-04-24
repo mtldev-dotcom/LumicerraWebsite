@@ -17,10 +17,14 @@
     "intro": {
       "title": "Solutions d'Éclairage LED Innovantes",
       "description": "Lumicerra propose des systèmes d'éclairage LED de pointe conçus pour des applications commerciales et résidentielles. Nos solutions écoénergétiques allient durabilité et attrait esthétique.",
-      "learnMore": "En Savoir Plus"
+      "learnMore": "En Savoir Plus",
+      "illuminating": "Innovation Lumineuse",
+      "description1": "Chez Lumicerra, nous fabriquons des systèmes d'éclairage LED ultra-minces qui combinent technologie de pointe et durabilité inégalée. Nos panneaux révolutionnent la façon dont les solutions d'éclairage sont mises en œuvre dans les applications architecturales, commerciales et maritimes.",
+      "description2": "Avec un accent sur la durabilité, l'efficacité et la polyvalence de conception, nous sommes fiers de fournir des produits fabriqués au Canada qui dépassent les normes de l'industrie et illuminent les possibilités."
     },
     "features": {
       "title": "Pourquoi Choisir Lumicerra",
+      "standsOut": "Pourquoi Lumicerra Se Démarque",
       "energyEfficient": {
         "title": "Économie d'Énergie",
         "description": "Nos panneaux LED consomment jusqu'à 80 % moins d'énergie que l'éclairage traditionnel tout en offrant une luminosité supérieure."
@@ -36,23 +40,53 @@
       "customSolutions": {
         "title": "Solutions Personnalisées",
         "description": "Options d'éclairage sur mesure pour répondre aux exigences spécifiques de votre projet unique."
+      },
+      "applications": {
+        "title": "Plus de 100 Applications",
+        "description": "Panneaux LED polyvalents pour d'innombrables solutions d'éclairage dans de multiples industries."
+      },
+      "canadianMade": {
+        "title": "Fabriqué au Canada",
+        "description": "Fabriqué au Canada avec une ingénierie de précision et des matériaux de qualité."
+      },
+      "waterproof": {
+        "title": "Imperméable et Sans Entretien",
+        "description": "Conçu pour résister aux environnements difficiles sans nécessiter d'entretien régulier."
+      },
+      "brightness": {
+        "title": "Luminosité Inégalée",
+        "description": "Illumination supérieure avec une technologie écoénergétique qui surpasse les concurrents."
       }
     },
     "testimonials": {
       "title": "Ce Que Disent Nos Clients",
       "viewProjects": "Voir Nos Projets"
+    },
+    "cta": {
+      "title": "Prêt à Transformer Votre Expérience d'Éclairage ?",
+      "description": "Notre équipe d'experts est prête à vous aider à trouver la solution d'éclairage LED parfaite pour votre projet.",
+      "buttonText": "Contactez-Nous Dès Aujourd'hui"
     }
   },
   "products": {
     "title": "Nos Produits",
     "subtitle": "Découvrez notre gamme de solutions d'éclairage LED premium",
+    "heroSubtitle": "Explorez notre gamme de solutions d'éclairage LED innovantes conçues pour la durabilité, l'efficacité et la polyvalence.",
     "specifications": "Spécifications",
     "features": "Caractéristiques",
     "applications": "Applications",
-    "downloadDatasheet": "Télécharger la Fiche Technique"
+    "downloadDatasheet": "Télécharger la Fiche Technique",
+    "technicalSpecs": "Spécifications Techniques",
+    "contactUs": "Contactez-Nous",
+    "customSolution": {
+      "title": "Besoin d'une Solution Personnalisée ?",
+      "description": "Notre équipe peut développer des solutions d'éclairage sur mesure pour vos besoins spécifiques. Contactez nos experts pour discuter de vos exigences.",
+      "buttonText": "Demander un Devis Personnalisé"
+    }
   },
   "whyChooseUs": {
     "title": "Pourquoi Choisir Lumicerra",
+    "subtitle": "Notre engagement envers la qualité et l'innovation nous distingue dans l'industrie de l'éclairage LED.",
     "quality": {
       "title": "Qualité et Durabilité",
       "description": "Nos systèmes LED sont conçus pour durer, avec un contrôle qualité rigoureux et des matériaux de qualité supérieure."
@@ -76,11 +110,36 @@
     "warranty": {
       "title": "Garantie Leader du Marché",
       "description": "Tranquillité d'esprit avec notre garantie complète et nos garanties de produit."
+    },
+    "technicalExcellence": {
+      "title": "Excellence Technique",
+      "ultraThin": {
+        "title": "Conception Ultra-Mince",
+        "description": "Seulement ½\" ou ¾\" d'épaisseur, permettant une intégration parfaite dans n'importe quel espace."
+      },
+      "maintenanceFree": {
+        "title": "Sans Entretien",
+        "description": "Conçu pour la longévité avec des exigences d'entretien minimales au fil du temps."
+      },
+      "waterproof": {
+        "title": "Construction Imperméable",
+        "description": "Imperméabilité certifiée IP68 pour des performances fiables dans des environnements humides."
+      },
+      "easyInstall": {
+        "title": "Installation Facile",
+        "description": "Options de montage simples et connectivité plug-and-play pour une installation sans tracas."
+      }
+    },
+    "manufacturing": {
+      "title": "Notre Processus de Fabrication",
+      "description1": "Les panneaux LED de Lumicerra sont fabriqués selon une technologie exclusive à base de résine qui garantit une durabilité et des performances exceptionnelles. Notre conception résistante à la pression peut résister à des environnements exigeants tout en maintenant une qualité d'éclairage constante.",
+      "description2": "Chaque panneau subit des tests de contrôle qualité rigoureux pour s'assurer qu'il répond à nos normes strictes en matière de luminosité, d'imperméabilisation et de durabilité avant de quitter notre usine de fabrication canadienne."
     }
   },
   "applications": {
     "title": "Applications",
     "subtitle": "Solutions d'éclairage polyvalentes pour tout environnement",
+    "mainSubtitle": "Nos systèmes d'éclairage LED sont suffisamment polyvalents pour répondre aux exigences de diverses industries et applications.",
     "commercial": {
       "title": "Commercial",
       "description": "Idéal pour les immeubles de bureaux, les espaces commerciaux et les établissements hôteliers."
@@ -104,11 +163,17 @@
     "speciality": {
       "title": "Applications Spéciales",
       "description": "Solutions personnalisées pour des défis d'éclairage uniques."
+    },
+    "customApplications": {
+      "title": "Applications Personnalisées",
+      "description": "Vous ne trouvez pas ce que vous cherchez ? Notre équipe est spécialisée dans le développement de solutions d'éclairage personnalisées adaptées à vos besoins spécifiques.",
+      "buttonText": "Discuter de Votre Projet"
     }
   },
   "projects": {
     "title": "Nos Projets",
     "subtitle": "Découvrez comment nos solutions d'éclairage LED transforment les espaces",
+    "mainSubtitle": "Découvrez comment nos solutions d'éclairage LED ont transformé des espaces dans diverses industries.",
     "viewDetails": "Voir les Détails",
     "location": "Emplacement",
     "projectType": "Type de Projet",
@@ -120,15 +185,19 @@
   "contact": {
     "title": "Contactez-Nous",
     "subtitle": "Entrez en contact avec notre équipe",
+    "mainSubtitle": "Prêt à discuter de vos besoins d'éclairage ? Notre équipe est là pour vous aider à trouver la solution parfaite.",
     "form": {
       "name": "Nom",
       "email": "Email",
       "phone": "Téléphone",
       "company": "Entreprise",
       "message": "Message",
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "sending": "Envoi en cours...",
+      "sendMessage": "Envoyer le Message"
     },
     "info": {
+      "title": "Prenez Contact",
       "address": "Adresse",
       "phone": "Téléphone",
       "email": "Email",

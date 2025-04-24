@@ -10,8 +10,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useState } from "react";
-import { useMutation } from "@tanstack/react-query";
 import { useToast } from "../hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -22,6 +22,7 @@ const formSchema = z.object({
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { t } = useTranslation();
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -32,51 +33,67 @@ export default function Contact() {
     },
   });
   
-  const mutation = useMutation({
-    mutationFn: async (values: z.infer<typeof formSchema>) => {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
-      
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+    .then(response => {
       if (!response.ok) {
         throw new Error("Failed to send message");
       }
-      
       return response.json();
-    },
-    onSuccess: () => {
+    })
+    .then(() => {
       toast({
         title: "Message sent!",
         description: "We'll get back to you as soon as possible.",
       });
       form.reset();
-    },
-    onError: (error: any) => {
+    })
+    .catch(error => {
       toast({
         title: "Something went wrong.",
         description: error.message || "Please try again later.",
         variant: "destructive",
       });
-    },
-  });
-  
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    mutation.mutate(values);
+    })
+    .finally(() => {
+      setIsSubmitting(false);
+    });
   }
   
   return (
     <PageTransition>
-      <div className="pt-24">
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <h1 className="text-3xl font-bold text-center mb-4 uppercase font-montserrat">Contact Us</h1>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Ready to discuss your lighting needs? Our team is here to help you find the perfect solution.
+      {/* Hero Section */}
+      <section 
+        className="w-full py-32 flex items-center justify-center text-white"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/C6D7B471-178C-4A3D-B15A-EBF22B1524FB.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="container mx-auto px-4 text-center">
+          <MotionSection>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-wider font-montserrat">
+              {t('contact.title')}
+            </h1>
+            <p className="text-xl max-w-2xl mx-auto">
+              {t('contact.mainSubtitle')}
             </p>
+          </MotionSection>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+            {/* Remove duplicate title and subtitle that are already in the hero section */}
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -90,10 +107,10 @@ export default function Contact() {
                           name="name"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-gray-700 font-medium">Name</FormLabel>
+                              <FormLabel className="text-gray-700 font-medium">{t('contact.form.name')}</FormLabel>
                               <FormControl>
                                 <Input 
-                                  placeholder="Your name" 
+                                  placeholder={t('contact.form.name')} 
                                   className="px-4 py-3 focus:ring-primary" 
                                   {...field} 
                                 />
@@ -108,10 +125,10 @@ export default function Contact() {
                           name="email"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-gray-700 font-medium">Email</FormLabel>
+                              <FormLabel className="text-gray-700 font-medium">{t('contact.form.email')}</FormLabel>
                               <FormControl>
                                 <Input 
-                                  placeholder="Your email address" 
+                                  placeholder={t('contact.form.email')} 
                                   type="email"
                                   className="px-4 py-3 focus:ring-primary" 
                                   {...field} 
@@ -127,10 +144,10 @@ export default function Contact() {
                           name="message"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-gray-700 font-medium">Message</FormLabel>
+                              <FormLabel className="text-gray-700 font-medium">{t('contact.form.message')}</FormLabel>
                               <FormControl>
                                 <Textarea 
-                                  placeholder="Tell us about your project" 
+                                  placeholder={t('contact.form.message')} 
                                   className="px-4 py-3 focus:ring-primary" 
                                   rows={5}
                                   {...field} 
@@ -144,9 +161,9 @@ export default function Contact() {
                         <Button 
                           type="submit" 
                           className="w-full bg-[#232625] hover:bg-[#232625]/80 text-white font-medium py-3 px-6"
-                          disabled={mutation.isPending}
+                          disabled={isSubmitting}
                         >
-                          {mutation.isPending ? "Sending..." : "Send Message"}
+                          {isSubmitting ? t('contact.form.sending') : t('contact.form.sendMessage')}
                         </Button>
                       </form>
                     </Form>
@@ -158,10 +175,10 @@ export default function Contact() {
               <MotionSection delay={0.2}>
                 <Card className="bg-[#F9F9F9] shadow-md h-full">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold mb-6 font-montserrat">Get In Touch</h3>
+                    <h3 className="text-2xl font-bold mb-6 font-montserrat">{t('contact.info.title')}</h3>
                     
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold mb-2 font-montserrat">Phone</h4>
+                      <h4 className="text-lg font-bold mb-2 font-montserrat">{t('contact.info.phone')}</h4>
                       <p className="flex items-center text-gray-700">
                         <span className="text-primary mr-3">📞</span>
                         <a href="tel:5144675454" className="hover:text-primary transition-colors">514 467-5454</a>
@@ -169,7 +186,7 @@ export default function Contact() {
                     </div>
                     
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold mb-2 font-montserrat">Email</h4>
+                      <h4 className="text-lg font-bold mb-2 font-montserrat">{t('contact.info.email')}</h4>
                       <p className="flex items-center text-gray-700">
                         <span className="text-primary mr-3">✉️</span>
                         <a href="mailto:info@lumicerra.com" className="hover:text-primary transition-colors">info@lumicerra.com</a>
@@ -177,7 +194,7 @@ export default function Contact() {
                     </div>
                     
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold mb-2 font-montserrat">Address</h4>
+                      <h4 className="text-lg font-bold mb-2 font-montserrat">{t('contact.info.address')}</h4>
                       <p className="flex items-start text-gray-700">
                         <span className="text-primary mr-3 mt-1">📍</span>
                         <span>12740 Langelier Boulevard, Suite 5<br />Montreal, QC H1G 3N1</span>
@@ -201,7 +218,6 @@ export default function Contact() {
             </div>
           </div>
         </section>
-      </div>
     </PageTransition>
   );
 }

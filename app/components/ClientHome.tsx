@@ -82,12 +82,12 @@ const ClientHome: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <MotionSection>
-              <h2 className="text-3xl font-bold mb-6 uppercase font-montserrat">Illuminating Innovation</h2>
+              <h2 className="text-3xl font-bold mb-6 uppercase font-montserrat">{t('home.intro.illuminating')}</h2>
               <p className="text-lg text-gray-700 mb-6">
-                At Lumicerra, we manufacture ultra-thin LED lighting systems that combine cutting-edge technology with unmatched durability. Our panels revolutionize how lighting solutions are implemented across architectural, commercial, and maritime applications.
+                {t('home.intro.description1')}
               </p>
               <p className="text-lg text-gray-700">
-                With a focus on sustainability, efficiency, and design versatility, we're proud to deliver Canadian-made products that exceed industry standards and illuminate possibilities.
+                {t('home.intro.description2')}
               </p>
             </MotionSection>
             
@@ -106,7 +106,7 @@ const ClientHome: React.FC = () => {
       <section className="py-16 bg-[#bab7ad]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 uppercase font-montserrat">
-            Why Lumicerra Stands Out
+            {t('home.features.standsOut')}
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -117,8 +117,8 @@ const ClientHome: React.FC = () => {
                   <div className="text-primary mb-4 flex justify-center">
                     <Layers size={40} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-montserrat">100+ Applications</h3>
-                  <p className="text-gray-600">Versatile LED panels for countless lighting solutions across multiple industries.</p>
+                  <h3 className="text-xl font-bold mb-3 font-montserrat">{t('home.features.applications.title')}</h3>
+                  <p className="text-gray-600">{t('home.features.applications.description')}</p>
                 </CardContent>
               </Card>
             </MotionSection>
@@ -130,8 +130,8 @@ const ClientHome: React.FC = () => {
                   <div className="text-primary mb-4 flex justify-center">
                     <Flag size={40} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-montserrat">Canadian-Made</h3>
-                  <p className="text-gray-600">Manufactured in Canada with precision engineering and quality materials.</p>
+                  <h3 className="text-xl font-bold mb-3 font-montserrat">{t('home.features.canadianMade.title')}</h3>
+                  <p className="text-gray-600">{t('home.features.canadianMade.description')}</p>
                 </CardContent>
               </Card>
             </MotionSection>
@@ -143,8 +143,8 @@ const ClientHome: React.FC = () => {
                   <div className="text-primary mb-4 flex justify-center">
                     <Droplet size={40} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-montserrat">Waterproof & Maintenance-Free</h3>
-                  <p className="text-gray-600">Designed to withstand harsh environments without requiring regular maintenance.</p>
+                  <h3 className="text-xl font-bold mb-3 font-montserrat">{t('home.features.waterproof.title')}</h3>
+                  <p className="text-gray-600">{t('home.features.waterproof.description')}</p>
                 </CardContent>
               </Card>
             </MotionSection>
@@ -156,8 +156,8 @@ const ClientHome: React.FC = () => {
                   <div className="text-primary mb-4 flex justify-center">
                     <Lightbulb size={40} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-montserrat">Unmatched Brightness</h3>
-                  <p className="text-gray-600">Superior illumination with energy-efficient technology that outperforms competitors.</p>
+                  <h3 className="text-xl font-bold mb-3 font-montserrat">{t('home.features.brightness.title')}</h3>
+                  <p className="text-gray-600">{t('home.features.brightness.description')}</p>
                 </CardContent>
               </Card>
             </MotionSection>
@@ -169,13 +169,13 @@ const ClientHome: React.FC = () => {
       <section className="py-12 bg-[#232625] text-white">
         <div className="container mx-auto px-4 text-center">
           <MotionSection>
-            <h2 className="text-3xl font-bold mb-6 font-montserrat">Ready to Transform Your Lighting Experience?</h2>
+            <h2 className="text-3xl font-bold mb-6 font-montserrat">{t('home.cta.title')}</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Our team of experts is ready to help you find the perfect LED lighting solution for your project.
+              {t('home.cta.description')}
             </p>
             <Button asChild size="lg" className="bg-white text-[#232625] hover:bg-gray-100 hover:text-[#232625] font-bold">
               <Link href="/contact">
-                Get In Touch Today
+                {t('home.cta.buttonText')}
               </Link>
             </Button>
           </MotionSection>

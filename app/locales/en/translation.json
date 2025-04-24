@@ -17,10 +17,14 @@
     "intro": {
       "title": "Innovative LED Lighting Solutions",
       "description": "Lumicerra provides state-of-the-art LED lighting systems designed for both commercial and residential applications. Our energy-efficient solutions combine durability with aesthetic appeal.",
-      "learnMore": "Learn More"
+      "learnMore": "Learn More",
+      "illuminating": "Illuminating Innovation",
+      "description1": "At Lumicerra, we manufacture ultra-thin LED lighting systems that combine cutting-edge technology with unmatched durability. Our panels revolutionize how lighting solutions are implemented across architectural, commercial, and maritime applications.",
+      "description2": "With a focus on sustainability, efficiency, and design versatility, we're proud to deliver Canadian-made products that exceed industry standards and illuminate possibilities."
     },
     "features": {
       "title": "Why Choose Lumicerra",
+      "standsOut": "Why Lumicerra Stands Out",
       "energyEfficient": {
         "title": "Energy Efficient",
         "description": "Our LED panels use up to 80% less energy than traditional lighting while providing superior brightness."
@@ -36,23 +40,53 @@
       "customSolutions": {
         "title": "Custom Solutions",
         "description": "Tailored lighting options to meet the specific requirements of your unique project."
+      },
+      "applications": {
+        "title": "100+ Applications",
+        "description": "Versatile LED panels for countless lighting solutions across multiple industries."
+      },
+      "canadianMade": {
+        "title": "Canadian-Made",
+        "description": "Manufactured in Canada with precision engineering and quality materials."
+      },
+      "waterproof": {
+        "title": "Waterproof & Maintenance-Free",
+        "description": "Designed to withstand harsh environments without requiring regular maintenance."
+      },
+      "brightness": {
+        "title": "Unmatched Brightness",
+        "description": "Superior illumination with energy-efficient technology that outperforms competitors."
       }
     },
     "testimonials": {
       "title": "What Our Clients Say",
       "viewProjects": "View Our Projects"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Lighting Experience?",
+      "description": "Our team of experts is ready to help you find the perfect LED lighting solution for your project.",
+      "buttonText": "Get In Touch Today"
     }
   },
   "products": {
     "title": "Our Products",
     "subtitle": "Discover our range of premium LED lighting solutions",
+    "heroSubtitle": "Explore our range of innovative LED lighting solutions designed for durability, efficiency, and versatility.",
     "specifications": "Specifications",
     "features": "Features",
     "applications": "Applications",
-    "downloadDatasheet": "Download Technical Datasheet"
+    "downloadDatasheet": "Download Technical Datasheet",
+    "technicalSpecs": "Technical Specs",
+    "contactUs": "Contact Us",
+    "customSolution": {
+      "title": "Need a Custom Solution?",
+      "description": "Our team can develop tailored lighting solutions for your specific needs. Get in touch with our experts to discuss your requirements.",
+      "buttonText": "Request Custom Quote"
+    }
   },
   "whyChooseUs": {
     "title": "Why Choose Lumicerra",
+    "subtitle": "Our commitment to quality and innovation sets us apart in the LED lighting industry.",
     "quality": {
       "title": "Quality & Durability",
       "description": "Our LED systems are built to last, with rigorous quality control and premium materials."
@@ -76,11 +110,36 @@
     "warranty": {
       "title": "Industry-Leading Warranty",
       "description": "Peace of mind with our comprehensive warranty and product guarantees."
+    },
+    "technicalExcellence": {
+      "title": "Technical Excellence",
+      "ultraThin": {
+        "title": "Ultra-Thin Design",
+        "description": "Only ½\" or ¾\" thickness, allowing for seamless integration into any space."
+      },
+      "maintenanceFree": {
+        "title": "Maintenance-Free",
+        "description": "Designed for longevity with minimal maintenance requirements over time."
+      },
+      "waterproof": {
+        "title": "Waterproof Construction",
+        "description": "IP68-rated waterproof for reliable performance in wet environments."
+      },
+      "easyInstall": {
+        "title": "Easy Installation",
+        "description": "Simple mounting options and plug-and-play connectivity for hassle-free setup."
+      }
+    },
+    "manufacturing": {
+      "title": "Our Manufacturing Process",
+      "description1": "Lumicerra's LED panels are manufactured using a proprietary resin-based technology that ensures exceptional durability and performance. Our pressure-resistant design can withstand demanding environments while maintaining consistent illumination quality.",
+      "description2": "Each panel undergoes rigorous quality control testing to ensure it meets our strict standards for brightness, waterproofing, and durability before leaving our Canadian manufacturing facility."
     }
   },
   "applications": {
     "title": "Applications",
     "subtitle": "Versatile lighting solutions for any environment",
+    "mainSubtitle": "Our LED lighting systems are versatile enough to meet the demands of various industries and applications.",
     "commercial": {
       "title": "Commercial",
       "description": "Ideal for office buildings, retail spaces, and hospitality venues."
@@ -104,11 +163,17 @@
     "speciality": {
       "title": "Specialty Applications",
       "description": "Custom solutions for unique lighting challenges."
+    },
+    "customApplications": {
+      "title": "Custom Applications",
+      "description": "Can't find what you're looking for? Our team specializes in developing custom lighting solutions tailored to your specific requirements.",
+      "buttonText": "Discuss Your Project"
     }
   },
   "projects": {
     "title": "Our Projects",
     "subtitle": "See how our LED lighting solutions transform spaces",
+    "mainSubtitle": "See how our LED lighting solutions have transformed spaces across various industries.",
     "viewDetails": "View Details",
     "location": "Location",
     "projectType": "Project Type",
@@ -120,15 +185,19 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with our team",
+    "mainSubtitle": "Ready to discuss your lighting needs? Our team is here to help you find the perfect solution.",
     "form": {
       "name": "Name",
       "email": "Email",
       "phone": "Phone",
       "company": "Company",
       "message": "Message",
-      "submit": "Submit"
+      "submit": "Submit",
+      "sending": "Sending...",
+      "sendMessage": "Send Message"
     },
     "info": {
+      "title": "Get In Touch",
       "address": "Address",
       "phone": "Phone",
       "email": "Email",

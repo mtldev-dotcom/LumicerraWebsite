@@ -4,17 +4,36 @@ import { Button } from "../components/ui/button";
 import Link from "next/link";
 import { MotionSection, PageTransition } from "../components/ui/motion-section";
 import { applications } from "../lib/data";
+import { useTranslation } from "react-i18next";
 
 export default function Applications() {
+  const { t } = useTranslation();
   return (
     <PageTransition>
-      <div className="pt-24">
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <h1 className="text-3xl font-bold text-center mb-4 uppercase font-montserrat">Applications</h1>
-            <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Our LED lighting systems are versatile enough to meet the demands of various industries and applications.
+      {/* Hero Section */}
+      <section 
+        className="w-full py-32 flex items-center justify-center text-white"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/78A7B5FE-F0AB-476A-9D4A-7DB5F48064DA.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="container mx-auto px-4 text-center">
+          <MotionSection>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-wider font-montserrat">
+              {t('applications.title')}
+            </h1>
+            <p className="text-xl max-w-2xl mx-auto">
+              {t('applications.mainSubtitle')}
             </p>
+          </MotionSection>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+            {/* Remove duplicate title and subtitle that are already in the hero section */}
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
               {applications.map((application, index) => (
@@ -37,19 +56,18 @@ export default function Applications() {
             </div>
             
             <MotionSection className="mt-16 text-center">
-              <h3 className="text-2xl font-bold mb-4 font-montserrat">Custom Applications</h3>
+              <h3 className="text-2xl font-bold mb-4 font-montserrat">{t('applications.customApplications.title')}</h3>
               <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
-                Can't find what you're looking for? Our team specializes in developing custom lighting solutions tailored to your specific requirements.
+                {t('applications.customApplications.description')}
               </p>
               <Button asChild size="lg" className="bg-[#232625] hover:bg-[#232625]/80 text-white">
                 <Link href="/contact">
-                  Discuss Your Project
+                  {t('applications.customApplications.buttonText')}
                 </Link>
               </Button>
             </MotionSection>
           </div>
         </section>
-      </div>
     </PageTransition>
   );
 }
